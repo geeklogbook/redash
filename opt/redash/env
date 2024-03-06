@@ -6,3 +6,9 @@ POSTGRES_PASSWORD=
 REDASH_COOKIE_SECRET=redash-selfhosted
 REDASH_SECRET_KEY=redash-selfhosted
 REDASH_DATABASE_URL=postgresql://postgres@postgres/postgres
+POSTGRES_HOST_AUTH_METHOD=trust
+
+
+# docker-compose run --rm server create_db
+# docker-compose run --rm postgres psql -h postgres -U postgres -c "create database tests"
+# http://localhost:5000/
